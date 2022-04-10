@@ -5,6 +5,13 @@ terraform {
       version = "= 3.74.2"
     }
   }
+  cloud {
+    organization = "example-org-8039af"
+
+    workspaces {
+      name = "desafio-terraform"
+    }
+  }
 }
 provider "aws" {
   region = var.region
