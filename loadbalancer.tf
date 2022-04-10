@@ -1,5 +1,5 @@
 resource "aws_elb" "desafio" {
-  name               = "desafio-terraform-elb"
+  name               = "elb-desafio-terraform"
   availability_zones = ["us-east-1a"]
 
   listener {
