@@ -10,7 +10,7 @@ variable "name" {
 
 variable "env" {
   description = "Environment application"
-  default     = "prod"
+  default     = "dev"
 }
 
 variable "ami" {
