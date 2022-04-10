@@ -41,6 +41,8 @@ resource "aws_instance" "server" {
 
   sudo apt install git -y
 
+  mkdir app
+
   EOL
 
   tags = {
