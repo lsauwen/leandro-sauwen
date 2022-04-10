@@ -2,11 +2,17 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "4.8.0"
+      version = "= 3.74.2"
+    }
+  }
+  cloud {
+    organization = "example-org-8039af"
+
+    workspaces {
+      name = "desafio-terraform"
     }
   }
 }
-
 provider "aws" {
   region = var.region
 }
