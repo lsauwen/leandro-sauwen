@@ -1,5 +1,5 @@
 resource "aws_security_group" "ssh_http" {
-  name        = "permitir ssh e http"
+  name        = "accept ssh e http"
   description = "Permite SSH e HTTP na instancia EC2"
   vpc_id      = var.vpc_id
 
