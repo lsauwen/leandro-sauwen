@@ -1,6 +1,6 @@
 resource "aws_elb" "desafio" {
   name               = "desafio-terraform-lb"
-  availability_zones = ["us-east-1a"]
+  availability_zones = ["us-east-1a", "us-east-1b"]
 
   listener {
     instance_port     = 8080
